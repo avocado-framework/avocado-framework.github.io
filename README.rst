@@ -1,8 +1,8 @@
 ================
-Autotest website
+Avocado website
 ================
 
-This is the autotest website. It is a plain HTML static page + CSS,
+This is the avocado website. It is a plain HTML static page + CSS,
 courtesy of the bootstrap project, by Twitter.
 
 Contributing
