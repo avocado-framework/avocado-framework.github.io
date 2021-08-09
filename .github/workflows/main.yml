@@ -1,0 +1,27 @@
+name: check HTML
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.0.8
+        with:
+          args: --verbose --no-progress *.html
+
+      - name: HTML5 Validator
+        uses: Cyb3r-Jak3/html5validator-action@v0.6.1
+        with:
+          # Path of the files to test
+          root: ./
+          # Checks css as well
+          css: true
