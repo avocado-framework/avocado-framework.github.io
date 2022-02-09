@@ -1,5 +1,5 @@
 @import "normalize";
-@import "rouge-github";
+
 @import url('https://fonts.googleapis.com/css?family=Architects+Daughter');
 
 /* LAYOUT STYLES */
@@ -34,9 +34,9 @@ header {
 header h1 {
   width: 540px;
   margin-top: 0;
-  margin-bottom: 0.2em;
-  font-size: 72px;
-  font-weight: normal;
+  margin-bottom: 0;
+  font-size: 70px;
+  font-weight: 500;
   line-height: 1;
   color: #fff;
   letter-spacing: -1px;
@@ -49,7 +49,7 @@ header h2 {
   font-size: 26px;
   font-weight: normal;
   line-height: 1.3;
-  color: #9ddcff;
+  color: #ffffff;
   letter-spacing: 0;
 }
 
@@ -143,7 +143,7 @@ pre {
 }
 pre code {
   padding: 0;
-  color: #2879d0;
+  color: #000;
   background-color: #fff;
   border: none;
 }
@@ -201,7 +201,7 @@ form {
 #main-content h1:before {
   padding-right: 0.3em;
   margin-left: -0.9em;
-  color: #9ddcff;
+  color: #1e9826;
   content: "/";
 }
 
@@ -217,7 +217,7 @@ form {
   padding-right: 0.3em;
   margin-left: -1.5em;
   content: "//";
-  color: #9ddcff;
+  color: #1e9826;
 }
 
 #main-content h3 {
@@ -234,7 +234,7 @@ form {
   padding-right: 0.3em;
   margin-left: -2em;
   content: "///";
-  color: #9ddcff;
+  color: #1e9826;
 }
 
 #main-content h4 {
@@ -250,7 +250,7 @@ h4:before {
   padding-right: 0.3em;
   margin-left: -2.8em;
   content: "////";
-  color: #9ddcff;
+  color: #1e9826;
 }
 
 #main-content h5 {
@@ -264,7 +264,7 @@ h5:before {
   padding-right: 0.3em;
   margin-left: -3.2em;
   content: "/////";
-  color: #9ddcff;
+  color: #1e9826;
 }
 
 #main-content h6 {
@@ -278,7 +278,7 @@ h6:before {
   padding-right: 0.3em;
   margin-left: -3.7em;
   content: "//////";
-  color: #9ddcff;
+  color: #1e9826;
 }
 
 p {
@@ -320,6 +320,7 @@ dl dd {
 footer {
   padding-top: 20px;
   padding-bottom: 30px;
+  padding-left: 30px;
   margin-top: 40px;
   font-size: 13px;
   color: #aaa;
@@ -331,6 +332,26 @@ footer a {
 footer a:hover {
   color: #444;
 }
+
+
+
+aside#sidebar  h2 {
+  margin-bottom: 8px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 20px;
+  color: #474747;
+  text-indent: 2px;
+}
+
+aside#sidebar  h3 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-size: 16px;
+  color: #474747;
+  text-indent: 2px;
+}
+
 
 /* MISC */
 .clearfix:after {
@@ -411,7 +432,7 @@ footer a:hover {
     line-height: 1;
     color: #2879d0;
     text-align: center;
-    background-color: #9ddcff;
+    background-color: #1e9826;
     background-image: none;
     border-radius: 5px;
     -moz-border-radius: 5px;
