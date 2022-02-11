@@ -2,122 +2,31 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# Avocado Framework
 
-[Link to another page](./another-page.html).
+Avocado is a framework with a set of tools and libraries to help with automated testing. Native tests are written in Python and they follow the `unittest` pattern, but any executable can serve as a test.
 
-There should be whitespace between paragraphs.
+Whether you want to automate the test plan made by your development team, do continuous integration, or develop quick tests for the feature you're working on, Avocado delivers the tools to help you out.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+Please, read our [quick guide](./quickguide.html) to get an idea of what avocado can do. If you want to go further, check out our [installation](./installation.html) instructions and take a look at the [full documentation at readthedocs](https://avocado-framework.readthedocs.io/en/latest/)!
 
-# Header 1
+You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman/listinfo/avocado-devel). In case of issues, please [report a bug in GitHub](https://github.com/avocado-framework/avocado/issues/new/choose).
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+<script src="https://asciinema.org/a/z29nmfykku0lRdYDV5YLZSzW5.js" id="asciicast-z29nmfykku0lRdYDV5YLZSzW5" autoplay=1 preload=1 data-theme="solarized-dark" async></script>
 
 
-### Definition lists can be used with HTML syntax.
+## Latest News
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+**2022.02.10 - Avocado 95.0 "PAW Patrol: The Movie Latest" released"**
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/95_0.html)
 
-```
-The final element.
-```
+
+**2021.12.20 - Avocado 94.0 "Gran Torino"**
+
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/94_0.html)
+
+
+**2021.11.17 - Avocado 93.0 "The Book of Eli"**
+
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/93_0.html)
