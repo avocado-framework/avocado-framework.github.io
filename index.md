@@ -17,7 +17,11 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 
 ## Latest News
 
-**2022.02.10 - Avocado 95.0 "PAW Patrol: The Movie Latest" released"**
+**2022.04.05 - Avocado 96.0 "Nueve reinas" released**
+
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/96_0.html)
+
+**2022.02.10 - Avocado 95.0 "PAW Patrol: The Movie Latest" released**
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/95_0.html)
 
@@ -26,7 +30,3 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/94_0.html)
 
-
-**2021.11.17 - Avocado 93.0 "The Book of Eli"**
-
-[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/93_0.html)
