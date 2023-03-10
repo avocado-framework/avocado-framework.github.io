@@ -17,6 +17,10 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 
 ## Latest News
 
+**2023.03.10 - Avocado 101.0 "One Hundred and One Dalmatians" released**
+
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/101_0.html)
+
 **2022.07.14 - Avocado 98.0 "The Thing" released**
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/98_0.html)
