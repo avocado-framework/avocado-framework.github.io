@@ -17,6 +17,14 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 
 ## Latest News
 
+**2024.03.19 - Avocado 104.0 "Restore Roint" released**
+
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/104_0.html)
+
+**2024.01.06 - Avocado 103.0 LTS "Sound of Freedom" released**
+
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/lts/103_0.html)
+
 **2023.06.23 - Avocado 102.0 "102 Dalmatians" released**
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/102_0.html)
@@ -28,11 +36,3 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 **2022.07.14 - Avocado 98.0 "The Thing" released**
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/98_0.html)
-
-**2022.05.26 - Avocado 97.0 "Dopesick" released**
-
-[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/97_0.html)
-
-**2022.04.05 - Avocado 96.0 "Nueve reinas" released**
-
-[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/96_0.html)
