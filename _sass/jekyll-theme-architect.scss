@@ -31,6 +31,11 @@ header {
   border-bottom: solid 1px #275da1;
 }
 
+header a img {
+  height: 100px;
+  display: inline-block;
+  vertical-align: middle;
+}
 header h1 {
   width: 540px;
   margin-top: 0;
@@ -40,6 +45,8 @@ header h1 {
   line-height: 1;
   color: #fff;
   letter-spacing: -1px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 header h2 {
