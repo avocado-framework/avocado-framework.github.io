@@ -17,6 +17,10 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 
 ## Latest News
 
+**2024.06.28 - Avocado 106.0 "Taking Off" released**
+
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/106_0.html)
+
 **2024.05.07 - Avocado 105.0 "Poor Things" released**
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/105_0.html)
@@ -33,10 +37,3 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/102_0.html)
 
-**2023.03.10 - Avocado 101.0 "One Hundred and One Dalmatians" released**
-
-[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/101_0.html)
-
-**2022.07.14 - Avocado 98.0 "The Thing" released**
-
-[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/98_0.html)
