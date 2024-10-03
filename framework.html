@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/resources/icons/avocado.ico">
+  <title>Avocado Testing Framework</title>
+  <link rel="stylesheet" href="./resources/css/framework.css">
+  <script src="/resources/js/navigation.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="left-header">
+        <a href="/">
+            <img src="/resources/logo/PNGs/full-colour.png" alt="Avocado Logo">
+        </a>
+        <h1 class="header-avocado">
+            <a href="/">Avocado</a>
+        </h1>
+    </div>
+    <div class="right-header">
+        <a href="https://github.com/avocado-framework/avocado/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=">Report a bug</a>
+        <a href="https://forms.gle/sW1jMGaMLpwzn6nLA">Mailing list</a>
+        <a href="https://github.com/avocado-framework/avocado">
+            <img src="/resources/icons/github.svg" alt="GitHub">
+        </a>
+    </div>
+</header>
+
+    <div class="subheader">
+        <div class="sub-logo-title">
+            <img src="/resources/icons/suitcase.svg" alt="Avocado-framework logo">
+            <h1 class="sub-avocado">Avocado-Framework</h1>
+        </div>
+    </div>
+
+
+    <nav>  
+    <a class="menu-btn">
+        <svg t="1583388234559" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2279" width="16" height="16"><path d="M128 213.34016l768 0q17.67424 0 30.16704 12.4928t12.4928 30.16704-12.4928 30.16704-30.16704 12.4928l-768 0q-17.67424 0-30.16704-12.4928t-12.4928-30.16704 12.4928-30.16704 30.16704-12.4928zM128 725.34016l768 0q17.67424 0 30.16704 12.4928t12.4928 30.16704-12.4928 30.16704-30.16704 12.4928l-768 0q-17.67424 0-30.16704-12.4928t-12.4928-30.16704 12.4928-30.16704 30.16704-12.4928zM128 469.34016l768 0q17.67424 0 30.16704 12.4928t12.4928 30.16704-12.4928 30.16704-30.16704 12.4928l-768 0q-17.67424 0-30.16704-12.4928t-12.4928-30.16704 12.4928-30.16704 30.16704-12.4928z" p-id="2280" fill="#40403F"></path></svg>
+    </a>
+    <a class="tab placeholder"></a>
+    <a class="tab" data-text="About" href="#about">About</a>
+    <a class="tab" data-text="Installation" href="#installation">Installation</a>
+    <a class="tab" data-text="Quick Guide" href="#quick-guide">Quick Guide</a>
+    <a class="tab" data-text="Documentation" href="https://avocado-framework.readthedocs.io/en/latest/">Documentation</a>
+    </nav>
+
+    <a name="about"></a>
+    <section id="about" class="page content-page">  
+        <div class="about-container"> <!-- Updated class name -->
+            <div class="abouttext">
+                <h1 class="section-headers">About</h1>
+                <p>Avocado is a framework with a set of tools and libraries to help with automated testing. Native tests are written in Python and they follow the unittest pattern, but any executable can serve as a test.</p>
+                <p>Whether you want to automate the test plan made by your development team, do continuous integration, or develop quick tests for the feature you’re working on, Avocado delivers the tools to help you out.</p>
+                <p>Please, read our quick guide to get an idea of what avocado can do. If you want to go further, check out our installation instructions and take a look at the full documentation at readthedocs!</p>
+                <p>You are welcome to reach us on our mailing list. In case of issues, please report a bug in GitHub.</p>
+            </div>
+            <div class="video">
+                <iframe src="https://asciinema.org/a/z29nmfykku0lRdYDV5YLZSzW5/iframe?theme=solarized-dark" 
+                id="asciicast-iframe-z29nmfykku0lRdYDV5YLZSzW5" 
+                name="asciicast-iframe-z29nmfykku0lRdYDV5YLZSzW5" 
+                scrolling="no" 
+                allowfullscreen="true">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <a name="installation"></a>
+    <section id="installation" class="page content-page">  
+        <h1 class="section-headers">Avocado Framework Installation</h1>
+        <div class="main">
+            <ul class="cards">
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://pbs.twimg.com/profile_images/909757546063323137/-RIWgodF_400x400.jpg" alt="PyPi Logo"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Python package on PyPI</h2>
+                    <div class="card_text">
+                      <p>You can install the package from PyPI:</p>
+                      <code class="card_code">pip3 install --user avocado-framework</code>
+                      <p>A system-wide installation is also possible, dropping the --user option.</p>
+                      <p>Also, check out for the avocado plugins distributed on PyPI</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+          
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Fedora_icon_%282021%29.svg" alt="Fedora Logo"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Installing from packages in Fedora</h2>
+                    <div class="card_text">
+                      <p>The Avocado Framework is available as a standard distribution package.</p>
+                        <p>Enable the latest stream and install it to use the latest version:</p>
+                      
+                        <div class="card_code">
+                            <code>dnf module enable avocado:latest</code>
+                            <br><br>
+                            <code>dnf module install avocado</code>
+                        </div>  
+                        <p>If you keep your system updated, you’ll get automatically the avocado updates.</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="/resources/images/copr.png" alt="COPR Logo"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Latest Development RPM Packages from COPR</h2>
+                    <div class="card_text">
+                      <p>Installing the latest Avocado code from the master branch is as easy as installing a package.</p> 
+                      <p>Enable the COPR repository and install the package using the package manager:</p>
+                        <div class="card_code">
+                            <code>dnf copr enable @avocado/avocado-latest</code>
+                            <br><br>
+                            <code>dnf install python3-avocado*</code>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item">
+                <div class="card">
+                  <div class="card_image"><img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="Github Logo"></div>
+                  <div class="card_content">
+                    <h2 class="card_title">Installing from the source code</h2>
+                    <div class="card_text">
+                      <p>Install the dependencies:</p>
+                      <code class="card_code">dnf install -y python3 git gcc python3-pip</code>
+                      <p>Clone and install from the main repository:</p>
+                        <div class="card_code">
+                            <code>git clone git://github.com/avocado-framework/avocado.git</code>
+                            <br><br>
+                            <code>cd avocado</code>
+                            <br><br>
+                            <code>python3 setup.py install --user</code>
+                            <br><br>
+                            <code>If you need more detailed instructions and how to install from source, please check our documentation.</code>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+    </section>
+     
+
+    <a name="quick-guide"></a>
+    <section id="quick-guide" class="page content-page">
+    <div class="main-guide">
+        <h1 class="section-headers">Avocado’s quick guide</h1>
+        <h2 class="section-headers">Running avocado from the command line</h2>
+        <p>The fastest way of running avocado is from the command line to run a test. This test can be a binary or script:</p>
+            <iframe
+                src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520avocado%2520run%2520examples%252Ftests%252Fsleeptest.py%250A%250AJOB%2520ID%2520%2520%2520%2520%2520%253A%25205edc01147e75c0f120263ddf17915e130d8bb7e9%250AJOB%2520LOG%2520%2520%2520%2520%253A%2520%252Fhome%252Fuser%252Favocado%252Fjob-results%252Fjob-2021-09-27T14.46-5edc011%252Fjob.log%250A%2520%281%252F1%29%2520examples%252Ftests%252Fsleeptest.py%253ASleepTest.test%253A%2520STARTED%250A%2520%281%252F1%29%2520examples%252Ftests%252Fsleeptest.py%253ASleepTest.test%253A%2520PASS%2520%281.01%2520s%29%250ARESULTS%2520%2520%2520%2520%253A%2520PASS%25201%2520%257C%2520ERROR%25200%2520%257C%2520FAIL%25200%2520%257C%2520SKIP%25200%2520%257C%2520WARN%25200%2520%257C%2520INTERRUPT%25200%2520%257C%2520CANCEL%25200%250AJOB%2520TIME%2520%2520%2520%253A%25203.77%2520s"
+                style="width: 916px; height: 265px; border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+        <h2 class="section-headers">Writing a Avocado Python test</h2>
+        <div class="guide-text">
+          <p>To write basic Avocado tests in Python, the test class should inherit from the avocado test.</p>
+          <p>This kind of test is also known as an instrumented test in Avocado.</p>
+          <p>The following is a basic Avocado test written in Python.</p>
+          </p>Copy and paste it to a file named basic.py</p>
+        </div>
+        <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=from%2520avocado%2520import%2520Test%250A%250Aclass%2520BasicTests%28Test%29%253A%250A%250A%2520%2520%2520%2520def%2520test_file_name_pass%28self%29%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520expected_file_name%2520%253D%2520%27basic%27%250A%2520%2520%2520%2520%2520%2520%2520%2520file_name%2520%253D%2520__name__%250A%2520%2520%2520%2520%2520%2520%2520%2520self.assertEqual%28file_name%252C%2520expected_file_name%29%250A"
+            style="width: 916px; height: 265px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+        <p>The file contains one single test. To run it execute:</p>
+        <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2524%2520avocado%2520run%2520basic.py%250AJOB%2520ID%2520%2520%2520%2520%2520%253A%2520927ee8f6973235d5137cb63695242cb025ee0e93%250AJOB%2520LOG%2520%2520%2520%2520%253A%2520%252Fhome%252Fuser%252Favocado%252Fjob-results%252Fjob-2021-11-24T17.03-927ee8f%252Fjob.log%250A%2520%281%252F1%29%2520basic.py%253ABasicTests.test_file_name_pass%253A%2520STARTED%250A%2520%281%252F1%29%2520basic.py%253ABasicTests.test_file_name_pass%253A%2520PASS%2520%280.01%2520s%29%250ARESULTS%2520%2520%2520%2520%253A%2520PASS%25201%2520%257C%2520ERROR%25200%2520%257C%2520FAIL%25200%2520%257C%2520SKIP%25200%2520%257C%2520WARN%25200%2520%257C%2520INTERRUPT%25200%2520%257C%2520CANCEL%25200%250AJOB%2520TIME%2520%2520%2520%253A%25201.32%2520s%250A"
+            style="width: 916px; height: 265px; border:0; transform: scale(1); overflow:hidden;"
+            sandbox="allow-scripts allow-same-origin">
+        </iframe>
+
+    </div>
+    </section>
+
+
+  <footer>
+    <div class="footer-header">Contact</div>
+    <div class="footer-text">
+        <a href="https://forms.gle/sW1jMGaMLpwzn6nLA">
+            <img src="/resources/icons/mail.svg" alt="Mail Icon">
+            Mailing List
+        </a>
+    </div>
+    <div class="footer-text">
+        <a href="https://github.com/avocado-framework/avocado/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=">
+            <img src="/resources/icons/bug.svg" alt="Bug Icon">
+            Report a Bug
+        </a>
+    </div>
+    <div class="footer-text">
+        <a href="https://avocado-framework.readthedocs.io/en/latest/">
+            <img src="/resources/icons/documentation.svg" alt="Doc Icon">
+            Documentation
+        </a>
+    </div>
+    <div class="footer-copyright">Copyright © 2024 Red Hat Inc. and Avocado Community Contributors</div>
+</footer>
+
+
+</body>
+</html>

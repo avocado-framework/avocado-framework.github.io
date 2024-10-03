@@ -1,0 +1,316 @@
+/* styles.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255,255,255,0.14329481792717091) 36%, rgba(211,208,45,0.3029586834733894) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensure the gradient stays fixed in place */
+    min-height: 100vh;
+    /* Set fixed width and height for portrait orientation */
+    width: 1080px; /* Fixed width for portrait */
+    height: 1920px; /* Fixed height for portrait */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    margin: 0 auto; /* Center the body horizontally */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+header .left-header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 90px;
+    margin-right: 10px;
+}
+
+header a {
+    color: #324904;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #597a12;
+}
+
+.header-avocado {
+    color: #324904;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header .right-header {
+    display: flex;
+    align-items: center;
+}
+
+.right-header a {
+    color: #324904;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.right-header a img {
+    height: 25px;
+    margin-left: 10px;
+}
+.sub-avocado {
+    color: #324904;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+  
+.typing.animate {
+    font-size: 20px;
+    color: #1c1a27;
+    text-align: center;
+    width: 21ch;
+    border-right: 0.1em solid black;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 1px;
+    animation: type 2.5s steps(20), writer 1s infinite alternate, delete 0.5s steps(5) 2.5s, type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0 auto; /* Added to center the element */
+  }
+  
+  .typing.animate::before { 
+    text-align: center;
+    content: "Next generation test framework";
+    animation: type2 1s steps(4) 3s forwards, type3 3s steps(22, end) 6s forwards;
+  }
+  
+  @keyframes type {
+    from {
+      width: 0;
+    }
+    to {
+      width: 21ch;
+    }
+  }
+  
+  @keyframes type2 {
+    from {
+      width: 16ch;
+      content: "Next generation test framework"
+    }
+    to {
+      width: 20ch;
+      content: "Next generation test framework"
+    }
+  }
+  
+  @keyframes type3 {
+    from {
+      width: 20ch;
+      content: "Next generation test framework for Linux!"
+    }
+    to {
+      width: 42ch;
+      content: "Next generation test framework for Linux!"
+    }
+  }
+  
+  @keyframes writer {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  @keyframes delete {
+    from {
+      width: 21ch;
+    }
+    to {
+      width: 16ch;
+    }
+  }
+
+.components {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.com-button {
+    background-image: linear-gradient(to right, #DCE35B 0%, #45B649  51%, #DCE35B  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.com-button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+@media (max-width: 768px) {
+    .components {
+        grid-template-columns: 1fr;
+    }
+}
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    height: auto;
+}
+.card img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.card-header {
+    color: #324904;
+    font-size: 25px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.card-header a {
+    color: #324904;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+}
+
+.card-header a:hover {
+    text-decoration: underline;
+    color: #597a12;
+}
+
+.card-text {
+    color: #1c1a27;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.card-button {
+    background-color: #597a12;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.news-header {
+    color: #324904;
+    font-size: 30px;
+    margin: 50px 0 20px 0; 
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.news {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2-column grid */
+    gap: 20px;
+}
+
+.news-card {
+    background-color: #e5e9d3;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto; /* Full width inside grid */
+    height: auto; 
+    min-height: 100px;
+}
+
+
+@media (max-width: 768px) {
+    .news {
+        grid-template-columns: 1fr;
+    }
+}
+footer {
+    background-color: #f0efb3;
+    padding: 20px;
+    text-align: left;
+    margin-top: auto;
+}
+
+footer a {
+    color: #324904;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #597a12;
+}
+
+footer .footer-header {
+    color: #324904;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+footer .footer-text {
+    color: #324904;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+footer .footer-copyright {
+    color: #324904;
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none; /* Add this line to remove underline from all anchor tags */
+}
+
