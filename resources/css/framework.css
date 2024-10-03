@@ -1,0 +1,495 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: 300;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.14329481792717091) 36%, rgba(211, 208, 45, 0.3029586834733894) 100%);
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	overflow-x: hidden;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+header .left-header {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 90px;
+    margin-right: 10px;
+}
+
+header a {
+    color: #324904;
+    text-decoration: none;
+    text-decoration-skip-ink: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+    color: #597a12;
+}
+
+.header-avocado {
+    color: #324904;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header .right-header {
+    display: flex;
+    align-items: center;
+}
+
+.right-header a {
+    color: #324904;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.right-header a img {
+    height: 25px;
+    margin-left: 10px;
+}
+
+.subheader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	background: transparent;
+	margin-top: 20px;
+}
+
+.sub-logo-title {
+	display: flex;
+	align-items: center;
+}
+
+.sub-logo-title img {
+	height: 30px;
+	margin-right: 15px;
+}
+
+.sub-avocado {
+	color: #324904;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+.section-headers {
+	font-size: 40px;
+	color: #1c1a27;
+	font-weight: 400;
+	text-align: center;
+}
+
+.fixed-size-container {
+    width: 1080px; /* Set width to 1080px */
+    height: 1920px; /* Set height to 1920px */
+    margin: 0 auto; /* Center the container */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	@extend .fixed-size-container; /* Use the fixed size class */
+}
+
+.about-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Optional: Add padding for better spacing */
+	@extend .fixed-size-container; /* Use the fixed size class */
+}
+
+.abouttext {
+    width: 100%; /* Make the text section take full width */
+    max-width: 800px; /* Optional: Limit the max width for better readability */
+    margin-bottom: 20px; /* Add space below the text */
+}
+
+.video {
+    width: 100%; /* Make the video section take full width */
+    max-width: 800px; /* Optional: Limit the max width for better responsiveness */
+}
+
+.video iframe {
+    width: 100%; /* Make iframe responsive */
+    height: 445px; /* Maintain the height */
+    border-radius: 8px; /* Keep rounded corners */
+}
+
+@media (orientation: portrait) {
+	.abouttext {
+		width: 100%; /* Make the text section take up full width */
+	}
+
+	.video {
+		width: 100%; /* Make the video section take up full width */
+		margin-top: 20px; /* Add some space between the text and video */
+	}
+
+	.container {
+		flex-direction: column; /* Change to column for portrait */
+	}
+}
+
+
+
+.page {
+	color: #40403F;
+	width: 100vw;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2rem;
+	/* Optional, to give space between sections */
+	padding-bottom: 2rem;
+	/* Optional */
+	min-height: 60vh;
+	/* Use this to ensure the sections at least cover the full viewport height */
+}
+
+
+nav~.content-page {
+	margin-top: 4.5rem;
+}
+
+.content-page {
+	font-size: 1.75rem;
+}
+
+#intro {
+	text-align: center;
+}
+
+@media (max-width: 720px) {
+	#intro {
+		margin-top: 4.5rem;
+	}
+}
+
+#intro>#intro-title {
+	font-size: 1.75rem;
+	margin-bottom: 2rem;
+}
+
+#intro>#intro-description {
+	font-size: 1rem;
+}
+
+nav {
+    top: 0;
+    width: 1080px; /* Fixed width */
+    margin: center; /* Centering */
+    min-height: 4.5rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Initial position */
+    z-index: 10;
+    left: 50%; /* Centers the nav */
+    transform: translateX(-50%); /* Centers the nav */
+}
+
+nav a {
+    position: relative;
+    background: transparent;
+    text-align: center;
+    height: 4.5rem;
+    text-decoration: none;
+    color: #1c1a27;
+    margin: 0 10px; /* Optional: Add some margin between tabs */
+}
+
+@media (max-width: 720px) {
+    nav {
+        flex-direction: column; /* Stack items vertically on small screens */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        top: 0;
+        height: 100vh;
+        width: initial;
+    }
+
+    nav a {
+        width: 100%; /* Make links full width on small screens */
+        margin: auto; /* Center links */
+        padding: 0 1.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+nav a.menu-btn {
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+}
+
+@media (min-width: 720px) {
+	nav a.menu-btn {
+		display: none;
+	}
+}
+
+nav a#user-btn {
+	color: #81B29A;
+	align-items: center;
+}
+
+nav a.tab:not(.placeholder),
+nav a.tab:not(.placeholder)::after {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	flex: 1;
+	line-height: 4.5rem;
+	font-size: 20px;
+	vertical-align: center;
+}
+
+nav a.tab:not(.placeholder)::before,
+nav a.tab:not(.placeholder)::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+}
+
+nav a.tab:not(.placeholder)::before {
+	content: "";
+	border-bottom: solid 2px #324904;
+	transition: 0.5s ease;
+	z-index: 1000;
+}
+
+@media (max-width: 720px) {
+	nav a.tab:not(.placeholder)::before {
+		display: none;
+	}
+}
+
+nav a.tab:not(.placeholder)::after {
+	content: attr(data-text);
+	color: #324904;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.14329481792717091) 36%, rgba(211, 208, 45, 0.3029586834733894) 100%);
+}
+
+@media (max-width: 720px) {
+	nav a.tab:not(.placeholder)::after {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0 1.5rem;
+	}
+}
+
+nav a.tab:not(.placeholder):hover::after {
+	opacity: 1;
+	transition: 0.5s ease;
+}
+
+nav a.tab:not(.placeholder).active::before {
+	opacity: 1;
+	transition: 0.5s ease;
+}
+
+nav a.tab.hidden {
+	display: none;
+}
+
+nav.hidden {
+	transform: translateX(-100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  height: calc(13*1.2rem);
+  padding: 1.2rem 1.2rem 0;
+  position:relative;
+}
+.card_image:before,
+.card_image:after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  left: 60%;
+  top: 0;
+  height: 45px;
+  background: #e6e6e6b8;
+  transform: rotate(45deg);
+}
+.card_image:after{
+  transform: rotate(-45deg);
+  top:auto;
+  bottom:-22px;
+  left:40%;
+}
+.card_image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.cards_item {
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-left: 30px;
+  background-repeat: no-repeat;
+  line-height: 1.2rem;
+  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
+}
+
+.card_content {
+  padding: 1.2rem;
+}
+
+h2.card_title,p {
+  margin: 1.2rem 0;
+}
+h2.card_title {
+    font-size: 20px;
+}
+
+.card_text {
+	font-size: 20px;
+}
+
+.card_code {
+    font-size: 12px;
+    overflow: auto; /* Ensure scroll if content overflows */
+    text-shadow: none;
+    background: #fff;
+    border: solid 1px #f2f2f2;
+    position: relative; /* Ensure proper stacking context */
+    z-index: 1; /* Ensure it appears above background */
+}
+
+.main-guide {
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center text */
+	@extend .fixed-size-container; /* Use the fixed size class */
+}
+
+.guide-text{
+	line-height: 130%;
+}
+
+footer {
+    background-color: #f0efb3;
+    padding: 20px;
+    text-align: left;
+    margin: 0 auto; /* Center the footer */
+	width: 1080px;
+}
+
+
+footer a {
+	color: #324904;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: #597a12;
+}
+
+footer .footer-header {
+	color: #324904;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+footer .footer-text {
+	color: #324904;
+	margin: 5px 0;
+	font-size: 16px;
+}
+
+footer .footer-copyright {
+	color: #324904;
+	margin: 5px 0;
+	font-size: 20px;
+	text-align: center;
+}
