@@ -17,6 +17,10 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 
 ## Latest News
 
+**2024.10.07 - Avocado 108.0 "Oppenheimer" released**
+
+[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/108_0.html)
+
 **2024.09.02 - Avocado 107.0 "The Godfather" released**
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/107_0.html)
@@ -32,8 +36,4 @@ You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman
 **2024.03.19 - Avocado 104.0 "Restore Roint" released**
 
 [Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/104_0.html)
-
-**2024.01.06 - Avocado 103.0 LTS "Sound of Freedom" released**
-
-[Find here all the information about this release.](https://avocado-framework.readthedocs.io/en/latest/releases/lts/103_0.html)
 
