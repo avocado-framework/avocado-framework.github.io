@@ -12,8 +12,7 @@ Please, read our [quick guide](./quickguide.html) to get an idea of what avocado
 
 You are welcome to reach us on our [mailing list](https://www.redhat.com/mailman/listinfo/avocado-devel). In case of issues, please [report a bug in GitHub](https://github.com/avocado-framework/avocado/issues/new/choose).
 
-<script src="https://asciinema.org/a/z29nmfykku0lRdYDV5YLZSzW5.js" id="asciicast-z29nmfykku0lRdYDV5YLZSzW5" autoplay=1 preload=1 data-theme="solarized-dark" async></script>
-
+<script src="https://asciinema.org/a/491576.js" id="asciicast-491576" autoplay=1 preload=1 data-theme="solarized-dark" async></script>
 
 ## Latest News
 
