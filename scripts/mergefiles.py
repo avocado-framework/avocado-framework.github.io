@@ -14,12 +14,12 @@ def merge_yaml_files(directory, output_file):
                 # Load the YAML data while preserving order
                 data = yaml.load(file, Loader=yaml.SafeLoader)  # Use SafeLoader
 
-                # Check if the loaded data is a list
-                if isinstance(data, list):
-                    merged_data.extend(data)  # Merge the list into merged_data
+                # Check if the loaded data is a dictionary
+                if isinstance(data, dict):
+                    merged_data.append(data)  # Append the dictionary to merged_data
                 else:
                     print(
-                        f"Warning: The content of {filename} is not a list. Skipping."
+                        f"Warning: The content of {filename} is not a dictionary. Skipping."
                     )
 
     # Write the merged data to the output YAML file

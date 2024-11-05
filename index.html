@@ -1,0 +1,121 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/resources/icons/avocado.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="/resources/css/home.css"> <!-- Link to the external CSS file -->
+    <script src="/resources/js/typing.js"></script>
+    <title>Avocado Testing Framework</title>
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+            <a href="/">
+                <img src="/resources/logo/PNGs/full-colour.png" alt="Avocado Logo">
+            </a>
+            <h1 class="header-avocado">
+                <a href="/">Avocado</a>
+            </h1>
+        </div>
+        <div class="right-header">
+            <a href="https://github.com/avocado-framework/avocado/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=">Report a bug</a>
+            <a href="https://forms.gle/sW1jMGaMLpwzn6nLA">Mailing list</a>
+            <a href="https://github.com/avocado-framework/">
+                <img src="/resources/icons/github.svg" alt="GitHub">
+            </a>
+        </div>
+
+        
+    </header>
+
+<div class="subheader">
+    <h1 class="sub-avocado">Avocado Testing Framework</h1>
+    <br>
+    <div class="typing animate"></div>
+    <br>
+    <br>
+</div>
+
+<div class="components">
+    <div class="card">
+        <img src="/resources/icons/suitcase.svg" alt="Suitcase Icon">
+        <h3 class="card-header">Avocado-Framework</h3>
+        <p class="card-text">A set of tools and libraries to help with automated testing.</p>
+        <a href="/framework.html" class="com-button">Learn more</a>
+    </div>
+
+    <div class="card">
+        <img src="/resources/icons/computer.svg" alt="Computer Icon">
+        <h3 class="card-header">Avocado VT</h3>
+        <p class="card-text">A compatibility plugin that lets you execute virtualization related tests.</p>
+        <a href="https://github.com/avocado-framework/avocado-vt" class="com-button">Learn more</a>
+    </div>
+
+    <div class="card">
+        <img src="/resources/icons/wheel.svg" alt="Wheel Icon">
+        <h3 class="card-header">Aexpect</h3>
+        <p class="card-text">A Python library used to spawn and control interactive programs.</p>
+        <a href="https://github.com/avocado-framework/aexpect" class="com-button">Learn more</a>
+    </div>
+
+    <div class="card">
+        <img src="/resources/icons/book.svg" alt="Book Icon">
+        <h3 class="card-header">Autils</h3>
+        <p class="card-text">Utility libraries to power your tests and general applications.</p>
+        <a href="/autils.html" class="com-button">Learn more</a>
+    </div>
+</div>
+
+
+<h1 class="news-header">Latest News</h1>
+
+<div class="news">
+
+    <div class="news-container">
+        {% for version in site.data.releases.versions %}
+          <div class="news-card">
+            <div>
+              <h3 class="card-header">
+                <a href="{{ version.href }}" class="news-link">{{ version.name }}</a>
+              </h3>
+              <p class="card-text">{{ version.date }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      
+
+</div>
+
+<footer>
+    <div class="footer-header">Contact</div>
+    <div class="footer-text">
+        <a href="https://forms.gle/sW1jMGaMLpwzn6nLA">
+            <img src="/resources/icons/mail.svg" alt="Mail Icon">
+            Mailing List
+        </a>
+    </div>
+    <div class="footer-text">
+        <a href="https://github.com/avocado-framework/avocado/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=">
+            <img src="/resources/icons/bug.svg" alt="Bug Icon">
+            Report a Bug
+        </a>
+    </div>
+    <div class="footer-text">
+        <a href="https://avocado-framework.readthedocs.io/en/latest/">
+            <img src="/resources/icons/documentation.svg" alt="Doc Icon">
+            Documentation
+        </a>
+    </div>
+    <div class="footer-copyright">Copyright © 2024 Red Hat Inc. and Avocado Community Contributors</div>
+</footer>
+
+</body>
+</html>
