@@ -1,0 +1,165 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Red Hat Display', sans-serif;
+	font-weight: 300;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.14329481792717091) 36%, rgba(211, 208, 45, 0.3029586834733894) 100%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100vh;
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 20px;
+	background-color: #fff;
+}
+
+header .left-header {
+	display: flex;
+	align-items: center;
+}
+
+header img {
+	height: 90px;
+	margin-right: 10px;
+}
+
+header a {
+	color: #324904;
+	text-decoration: none;
+	text-decoration-skip-ink: none;
+}
+
+header a:hover {
+	text-decoration: underline;
+	color: #597a12;
+}
+
+.header-avocado {
+	color: #324904;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+header .right-header {
+	display: flex;
+	align-items: center;
+}
+
+.right-header a {
+	color: #324904;
+	margin-left: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 200;
+}
+
+.right-header a img {
+	height: 25px;
+	margin-left: 10px;
+}
+
+.subheader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0;
+	background: transparent;
+	margin-top: 20px;
+}
+
+.sub-logo-title {
+	display: flex;
+	align-items: center;
+}
+
+.sub-logo-title img {
+	height: 30px;
+	margin-right: 15px;
+}
+
+.sub-avocado {
+	color: #324904;
+	font-size: 30px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin: 0;
+}
+
+footer {
+	background-color: #f0efb3;
+	padding: 20px;
+	text-align: left;
+	margin-top: auto;
+}
+
+footer a {
+	color: #324904;
+	text-decoration: none;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: #597a12;
+}
+
+footer .footer-header {
+	color: #324904;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+footer .footer-text {
+	color: #324904;
+	margin: 5px 0;
+	font-size: 16px;
+}
+
+footer .footer-copyright {
+	color: #324904;
+	margin: 5px 0;
+	font-size: 20px;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: #fff;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-title {
+	display: flex;
+	align-items: center;
+}
+
+.logo-title img {
+	height: 50px;
+	margin-right: 10px;
+}
+
+.logo-title h1 {
+	font-size: 30px;
+	color: #324904;
+	margin: 0;
+}

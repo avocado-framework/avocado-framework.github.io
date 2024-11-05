@@ -1,0 +1,128 @@
+---
+layout: null
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/resources/icons/avocado.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="/resources/css/autils.css"> <!-- Link to the external CSS file -->
+    <title>Autils</title>
+</head>
+<body>
+
+    <header>
+        <div class="left-header">
+            <a href="/">
+                <img src="/resources/logo/PNGs/full-colour.png" alt="Avocado Logo">
+            </a>
+            <h1 class="header-avocado">
+                <a href="/">Avocado</a>
+            </h1>
+        </div>
+        <div class="right-header">
+            <a href="https://github.com/avocado-framework/avocado/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=">Report a bug</a>
+            <a href="https://forms.gle/sW1jMGaMLpwzn6nLA">Mailing list</a>
+            <a href="https://github.com/avocado-framework">
+                <img src="/resources/icons/github.svg" alt="GitHub">
+            </a>
+        </div>
+    </header>
+
+    <div class="subheader">
+        <div class="sub-logo-title">
+            <img src="/resources/icons/computer.svg" alt="Avocado-framework logo">
+            <h1 class="sub-avocado">Autils</h1>
+        </div>
+    </div>
+
+    <div class="maintable">
+        <main class="table" id="customers_table">
+            <section class="table__header">
+                <h1>Utility Libraries</h1>
+                <div class="input-group">
+                    <input type="search" placeholder="Search Data...">
+                    <img src="/resources/images/search.png" alt="">
+                </div>
+            </section>
+            <section class="table__body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name <span class="icon-arrow">&UpArrow;</span></th>
+                            <th>Description <span class="icon-arrow">&UpArrow;</span></th>
+                            <th>Category <span class="icon-arrow">&UpArrow;</span></th>
+                            <th>Maintainer <span class="icon-arrow">&UpArrow;</span></th>
+                            <th>Supported Platforms <span class="icon-arrow">&UpArrow;</span></th>
+                            <th>Tests <span class="icon-arrow">&UpArrow;</span></th>
+                            <th>Remote <span class="icon-arrow">&UpArrow;</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in site.data.autils.modules %}
+                        <tr>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.description }}</td>
+                            <td>
+                                {% for category in item.categories %}
+                                    <p class="category {{ category }}">{{ category }}</p>
+                                {% endfor %}
+                            </td>
+                            <td>
+                                {% for maintainer in item.maintainers %}
+                                    <a href="mailto:{{ maintainer.email }}">
+                                        <img src="{{ maintainer.maintainer_image }}" alt="{{ maintainer.name }}">
+                                        {{ maintainer.name }}
+                                    </a><br>
+                                {% endfor %}
+                            </td>
+                            <td>
+                                {% for platform in item.supported_platforms %}
+                                    <p class="os {{ platform }}">{{ platform }}</p>
+                                {% endfor %}
+                            </td>
+                            <td>
+                                {% for test in item.tests %}
+                                    <strong>{{ test }}</strong><br>
+                                {% endfor %}
+                            </td>
+                            <td>{{ item.remote | default: 'false' }}</td>
+                        </tr>                        
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <script src="/resources/js/autils.js"></script>
+    </div>
+    
+
+    
+<footer>
+    <div class="footer-header">Contact</div>
+    <div class="footer-text">
+        <a href="https://forms.gle/sW1jMGaMLpwzn6nLA">
+            <img src="/resources/icons/mail.svg" alt="Mail Icon">
+            Mailing List
+        </a>
+    </div>
+    <div class="footer-text">
+        <a href="https://github.com/avocado-framework/avocado/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=">
+            <img src="/resources/icons/bug.svg" alt="Bug Icon">
+            Report a Bug
+        </a>
+    </div>
+    <div class="footer-text">
+        <a href="https://avocado-framework.readthedocs.io/en/latest/">
+            <img src="/resources/icons/documentation.svg" alt="Doc Icon">
+            Documentation
+        </a>
+    </div>
+    <div class="footer-copyright">Copyright © 2024 Red Hat Inc. and Avocado Community Contributors</div>
+</footer>
+
+</body>
+</html>
