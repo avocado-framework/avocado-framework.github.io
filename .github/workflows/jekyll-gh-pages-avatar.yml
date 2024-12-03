@@ -34,18 +34,18 @@ jobs:
       - name: Clone autils repo
         uses: actions/checkout@v3
         with:
-          repository: avocado-framework/autils
+          repository: avocado-framework/aautils
           path: resources/autils
           ref: main
 
       - name: List files in autils directory
-        run: ls -R resources/autils/metadata/autils/
+        run: ls -R resources/autils/metadata/
 
       - name: Copy autils metadata to _data dir
-        run: cp -r resources/autils/metadata/autils/* main/_data/autils/
+        run: cp -r resources/autils/metadata/* main/_data/autils/
 
       - name: Copy YAML files from autils
-        run: cp -r resources/autils/metadata/autils/**/*.yml main/_data/autils/
+        run: cp -r resources/autils/metadata/**/*.yml main/_data/autils/
 
       - name: Set up Python
         uses: actions/setup-python@v2
