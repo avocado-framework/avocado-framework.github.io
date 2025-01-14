@@ -1,3 +1,7 @@
+- name: "Avocado 1089.0 “9” released"
+  date: "2025.01.14"
+  href: "https://avocado-framework.readthedocs.io/en/latest/releases/109_0.html"
+
 - name: "Avocado 108.0 “Oppenheimer” released"
   date: "2024.10.07"
   href: "https://avocado-framework.readthedocs.io/en/latest/releases/108_0.html"
@@ -13,7 +17,3 @@
 - name: "Avocado 105.0 “Poor Things” released"
   date: "2024.05.07"
   href: "https://avocado-framework.readthedocs.io/en/latest/releases/105_0.html"
-
-- name: "Avocado 104.0 “Restore Roint” released"
-  date: "2024.03.19"
-  href: "https://avocado-framework.readthedocs.io/en/latest/releases/104_0.html"
