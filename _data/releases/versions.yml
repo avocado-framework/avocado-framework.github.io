@@ -1,3 +1,11 @@
+- name: "Avocado 111.0 “IRON MAN” released"
+  date: "2025.05.19"
+  href: "https://avocado-framework.readthedocs.io/en/latest/releases/111_0.html"
+
+- name: "Avocado 110.0 “The Harder They Come” released"
+  date: "2025.04.27"
+  href: "https://avocado-framework.readthedocs.io/en/latest/releases/110_0.html"
+
 - name: "Avocado 109.0 “9” released"
   date: "2025.01.14"
   href: "https://avocado-framework.readthedocs.io/en/latest/releases/109_0.html"
@@ -14,6 +22,3 @@
   date: "2024.06.28"
   href: "https://avocado-framework.readthedocs.io/en/latest/releases/106_0.html"
 
-- name: "Avocado 105.0 “Poor Things” released"
-  date: "2024.05.07"
-  href: "https://avocado-framework.readthedocs.io/en/latest/releases/105_0.html"
