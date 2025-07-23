@@ -41,11 +41,10 @@ jobs:
       - name: List files in autils directory
         run: ls -R resources/autils/metadata/
 
-      - name: Copy autils metadata to _data dir
-        run: cp -r resources/autils/metadata/* main/_data/autils/
-
-      - name: Copy YAML files from autils
-        run: cp -r resources/autils/metadata/**/*.yml main/_data/autils/
+      - name: Create data directory and copy autils metadata
+        run: |
+          mkdir -p main/_data/autils/
+          cp -r resources/autils/metadata/* main/_data/autils/
 
       - name: Set up Python
         uses: actions/setup-python@v5
