@@ -1,3 +1,4 @@
+import glob
 import os
 
 import yaml
@@ -6,21 +7,27 @@ import yaml
 def merge_yaml_files(directory, output_file):
     merged_data = []  # Initialize an empty list to hold merged data
 
-    # Iterate over all files in the directory
-    for filename in sorted(os.listdir(directory)):
-        if filename.endswith(".yml") or filename.endswith(".yaml"):
-            file_path = os.path.join(directory, filename)
-            with open(file_path, "r") as file:
-                # Load the YAML data while preserving order
-                data = yaml.load(file, Loader=yaml.SafeLoader)  # Use SafeLoader
+    # Find all YAML files recursively in subdirectories
 
-                # Check if the loaded data is a dictionary
-                if isinstance(data, dict):
-                    merged_data.append(data)  # Append the dictionary to merged_data
-                else:
-                    print(
-                        f"Warning: The content of {filename} is not a dictionary. Skipping."
-                    )
+    yaml_files = glob.glob(os.path.join(directory, "**", "*.yml"), recursive=True)
+    yaml_files.extend(
+        glob.glob(os.path.join(directory, "**", "*.yaml"), recursive=True)
+    )
+
+    # Process each YAML file found
+    for file_path in sorted(yaml_files):
+        filename = os.path.basename(file_path)
+        with open(file_path, "r") as file:
+            # Load the YAML data while preserving order
+            data = yaml.load(file, Loader=yaml.SafeLoader)  # Use SafeLoader
+
+            # Check if the loaded data is a dictionary
+            if isinstance(data, dict):
+                merged_data.append(data)  # Append the dictionary to merged_data
+            else:
+                print(
+                    f"Warning: The content of {filename} is not a dictionary. Skipping."
+                )
 
     # Write the merged data to the output YAML file
     with open(output_file, "w") as outfile:
