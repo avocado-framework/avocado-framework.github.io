@@ -1,3 +1,7 @@
+- name: "Avocado 112.0 “12 Monkeys” released"
+  date: "2025.09.24"
+  href: "https://avocado-framework.readthedocs.io/en/latest/releases/112_0.html"
+
 - name: "Avocado 111.0 “IRON MAN” released"
   date: "2025.05.19"
   href: "https://avocado-framework.readthedocs.io/en/latest/releases/111_0.html"
@@ -17,8 +21,4 @@
 - name: "Avocado 107.0 “The Godfather” released"
   date: "2024.09.02"
   href: "https://avocado-framework.readthedocs.io/en/latest/releases/107_0.html"
-
-- name: "Avocado 106.0 “Taking Off” released"
-  date: "2024.06.28"
-  href: "https://avocado-framework.readthedocs.io/en/latest/releases/106_0.html"
 
